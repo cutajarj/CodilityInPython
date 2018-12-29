@@ -11,7 +11,7 @@ def solution(A, B):
             stack.append(weight)
         else:
             weightdown = stack.pop() if stack else -1
-            while (weightdown != -1 and weightdown < weight):
+            while weightdown != -1 and weightdown < weight:
                 weightdown = stack.pop() if stack else -1
             if weightdown == -1:
                 survivors += 1
