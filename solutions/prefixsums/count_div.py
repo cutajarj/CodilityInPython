@@ -1,6 +1,6 @@
 # This is the solution for Prefix Sums > Count Div
 #
-# This is marked as PAINLESS difficulty
+# This is marked as RESPECTABLE difficulty
 
 from math import ceil, floor
 
