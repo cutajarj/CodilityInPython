@@ -1,4 +1,4 @@
-# This is the solution for Time Complexity > MaxCounters
+# This is the solution for Time Complexity > TapeEquilibrium
 #
 # This is marked as PAINLESS difficulty
 
