@@ -13,8 +13,8 @@ def solution(A):
             consecutive_size += 1
         else:
             consecutive_size -= 1
-    occurance = A.count(candidate)
-    if occurance > (len(A)/2):
+    occurrence = A.count(candidate)
+    if occurrence > (len(A)/2):
         return A.index(candidate)
     else:
         return -1
