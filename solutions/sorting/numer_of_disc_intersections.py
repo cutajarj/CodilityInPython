@@ -1,3 +1,7 @@
+# This is the solution for Sorting > NumberOfDiscIntersections
+#
+# This is marked as RESPECTABLE difficulty
+
 class DiscLog():
     def __init__(self, x, start_end):
         self.x = x
