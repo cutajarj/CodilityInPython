@@ -6,8 +6,8 @@ from math import ceil, floor
 
 
 def solution(A, B, K):
-    n_start = ceil(A / float(K))
-    n_end = floor(B / float(K))
+    n_start = ceil(A / K)
+    n_end = floor(B / K)
     return n_end - n_start + 1
 
 
