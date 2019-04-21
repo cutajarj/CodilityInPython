@@ -1,3 +1,7 @@
+# This is the solution for Prime And Composite > Flags
+#
+# This is marked as RESPECTABLE difficulty
+
 
 def solution(A):
     peaks = [0] * len(A)
@@ -15,6 +19,7 @@ def solution(A):
         current_guess = next_guess
         next_guess += 1
     return current_guess
+
 
 def can_place_flags(peaks, flags_to_place):
     current_position = 1 - flags_to_place
