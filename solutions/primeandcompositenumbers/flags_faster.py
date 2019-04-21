@@ -1,3 +1,5 @@
+from math import sqrt
+
 
 def solution(A):
     peaks = [0] * len(A)
@@ -9,12 +11,18 @@ def solution(A):
         peaks[i] = next_peak
     peaks[0] = next_peak
 
-    current_guess = 0
-    next_guess = 0
-    while can_place_flags(peaks, next_guess):
-        current_guess = next_guess
-        next_guess += 1
-    return current_guess
+    upper_guess = int(sqrt(len(A))) + 2
+    lower_guess = 0
+
+    while lower_guess < upper_guess - 1:
+        current_guess = int((lower_guess + upper_guess) / 2)
+        if can_place_flags(peaks, current_guess):
+            lower_guess = current_guess
+        else:
+            upper_guess = current_guess
+
+    return lower_guess
+
 
 def can_place_flags(peaks, flags_to_place):
     current_position = 1 - flags_to_place
@@ -24,7 +32,10 @@ def can_place_flags(peaks, flags_to_place):
         current_position = peaks[current_position + flags_to_place]
     return current_position < len(peaks)
 
+test_trail = [0] * 100000
+for i in range(100000):
+    if i % 2 == 1:
+        test_trail[i] += 1
 
-test_trail = [1,5,3,4,3,4,1,2,3,4,6,2]
 print(solution(test_trail))
 
