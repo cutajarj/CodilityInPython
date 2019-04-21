@@ -32,10 +32,6 @@ def can_place_flags(peaks, flags_to_place):
         current_position = peaks[current_position + flags_to_place]
     return current_position < len(peaks)
 
-test_trail = [0] * 100000
-for i in range(100000):
-    if i % 2 == 1:
-        test_trail[i] += 1
-
+test_trail = [1,5,3,4,3,4,1,2,3,4,6,2]
 print(solution(test_trail))
 
