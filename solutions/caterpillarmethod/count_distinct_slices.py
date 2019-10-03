@@ -9,8 +9,8 @@ def solution(M, A):
     for tail in range(0,len(A)):
         while head < len(A) and (not in_current_slice[A[head]]):
             in_current_slice[A[head]] = True
+            total_slices += (head - tail) + 1
             head += 1
-            total_slices += (head - tail)
             total_slices = 1000000000 if total_slices > 1000000000 else total_slices
         in_current_slice[A[tail]] = False
     return total_slices
