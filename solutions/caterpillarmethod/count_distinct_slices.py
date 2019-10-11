@@ -16,15 +16,7 @@ def solution(M, A):
     return total_slices
 
 
+print(solution(9, [2, 4, 1, 7, 4, 9, 7, 3, 5, 5, 8, 7, 1]))
+
 print(solution(6, [3, 4, 5, 5, 2]))
-
-print(solution(6, [3, 5, 4, 5, 2]))
-
-print(solution(6, [5, 3, 4, 2, 5]))
-
-print(solution(6, [5, 5, 5, 4, 5]))
-
-print(solution(6, [5]))
-
-print(solution(1, [0,1]))
 
