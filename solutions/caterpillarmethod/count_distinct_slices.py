@@ -6,7 +6,7 @@ def solution(M, A):
     total_slices = 0
     in_current_slice = [False] * (M + 1)
     head = 0
-    for tail in range(0,len(A)):
+    for tail in range(0, len(A)):
         while head < len(A) and (not in_current_slice[A[head]]):
             in_current_slice[A[head]] = True
             total_slices += (head - tail) + 1
@@ -19,4 +19,3 @@ def solution(M, A):
 print(solution(9, [2, 4, 1, 7, 4, 9, 7, 3, 5, 5, 8, 7, 1]))
 
 print(solution(6, [3, 4, 5, 5, 2]))
-
