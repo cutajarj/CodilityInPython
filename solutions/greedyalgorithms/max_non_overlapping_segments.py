@@ -14,7 +14,6 @@ def solution(A, B):
     return chosen_count
 
 
-
 print(solution([1, 3, 7, 9, 1], [5, 6, 8, 9, 10]))
 
 print(solution([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]))
