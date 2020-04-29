@@ -4,8 +4,8 @@
 
 
 def find_gcd(a, b):
-    if a % b == 0:
-        return b
+    if b == 0:
+        return a
     else:
         return find_gcd(b, a % b)
 
