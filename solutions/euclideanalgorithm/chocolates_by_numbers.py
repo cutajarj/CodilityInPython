@@ -11,8 +11,7 @@ def find_gcd(a, b):
 
 
 def solution(N, M):
-    gcd = find_gcd(N, M)
-    return N // gcd
+    return N // find_gcd(N, M)
 
 
 print(solution(10, 4))
