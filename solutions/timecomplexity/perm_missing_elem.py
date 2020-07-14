@@ -4,11 +4,12 @@
 
 
 def solution(A):
-    max_number = len(A) + 1
-    sum = 0
+    actual_sum = 0
     for number in A:
-        sum += number
-    return (max_number * (max_number + 1) // 2) - sum
+        actual_sum += number
+    max_number = len(A) + 1
+    expected_sum = (max_number * (max_number + 1) // 2)
+    return expected_sum - actual_sum
 
 
 print(solution([2, 3, 1, 5]))
