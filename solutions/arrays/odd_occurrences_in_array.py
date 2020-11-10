@@ -1,3 +1,8 @@
+# This is the solution for Arrays > OddOccurrencesInArray
+#
+# This is marked as PAINLESS difficulty
+
+
 def solution(A):
     numbers = set([])
     for n in A:
