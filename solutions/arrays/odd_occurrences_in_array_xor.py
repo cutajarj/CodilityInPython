@@ -4,11 +4,11 @@
 
 
 def solution(A):
-    result = A[0]
-    for i in range(1, len(A)):
+    result = 0
+    for i in range(0, len(A)):
         result ^= A[i]
     return result
 
 
-print(solution([9, 3, 9, 3, 9, 7, 9]))
+print(solution([1, 4, 4, 1, 6, 8, 6]))
 
