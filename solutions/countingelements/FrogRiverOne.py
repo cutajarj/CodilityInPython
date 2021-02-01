@@ -1,6 +1,6 @@
 # This is the solution for CountingElements > FrogRiverOne
 #
-# This is marked as RESPECTABLE difficulty
+# This is marked as PAINLESS difficulty
 
 def solution(X, A):
     river_positions = [False] * (X + 1)
