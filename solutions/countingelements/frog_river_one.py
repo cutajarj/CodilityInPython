@@ -18,4 +18,3 @@ print(solution(5, [1, 3, 1, 4, 2, 3, 5, 4]))
 print(solution(1, [1, 1, 1]))
 
 print(solution(3, [1, 2, 1]))
-
