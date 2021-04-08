@@ -2,12 +2,13 @@
 #
 # This is marked as RESPECTABLE difficulty
 
+
 def solution(A):
     min_abs_sum = 2000000000
     A = sorted(A)
     head = 0
     tail = len(A) - 1
-    while (head <= tail):
+    while head <= tail:
         min_abs_sum = min(min_abs_sum, abs(A[head] + A[tail]))
         if A[head] + A[tail] < 0:
             head += 1
